@@ -83,7 +83,7 @@ function App() {
 
 const Home = () => (
   <div>
-      <h1>Tune and Session Finder</h1>
+      <h1>Over React Demo</h1>
   </div>
 );
 
