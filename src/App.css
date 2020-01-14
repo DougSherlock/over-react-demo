@@ -1,0 +1,151 @@
+/* @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"); */
+
+:root {
+  --navbar-ht: 50px;
+  --dark-bgcolor: darkslategrey;
+  --light-color: white;
+}
+
+html
+{
+    font-size: 100%;
+    height: 100%;
+  }
+
+body {
+  background-color: brown;
+  color: white;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 10px; /* override default list item indent */
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#content {
+  padding: 0px; 
+  border-width: 0px;
+  margin: 0px;
+  position: fixed;
+  top: var(--navbar-ht);
+  width: 100%;
+  bottom: 0px;
+  /* flex: 1; */
+}
+
+.main-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 80%;
+  max-width: 300px;
+  text-align: left;
+  padding-left: 0px;
+  margin-left: 0px;
+  border-width: 0px;
+  z-index: -1; /* push back so selection of other elements is not affected */
+  opacity: 0;
+  transition: z-index 0.5s, opacity 0.5s;
+  /* background-color: var(--dark-bgcolor); */
+  /* color: var(--light-color); */
+}
+
+.main-menu-visible {
+  z-index: 2; /* push to front */
+  opacity: 1;
+}
+
+.sidebar-background { 
+  /* used to close sidebar when the user clicks away */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* push to front */
+  /* opacity: 1; */
+  /* display: none; */
+}
+
+.sidebar-background-visible { 
+  /* used to close sidebar when the user clicks away */
+  /* display: initial; */
+  z-index: 1; /* push to front */
+
+}
+
+
+.main-menu-link {
+  /* background-color: var(--dark-bgcolor); */
+  /* color: var(--light-color); */
+}
+
+#navbar {
+  margin-bottom: 0px;
+}
+
+#main-navbar {
+  /* background-color: var(--dark-bgcolor); */
+  /* color: var(--light-color); */
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+  min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}	
+
+.container box {
+		display: flex;
+		flex-direction: column;
+    justify-content: center;
+}
+	
+
+.container box-2 {
+		background-color: blue;
+		flex: 1;
+}
