@@ -9,10 +9,10 @@ function Sidebar(props) {
     return (
   
     <Nav className={mmClass} id="main-menu" >
-        <Nav.Link>
+        <Nav.Link className="main-menu-nav">
           <Link className="main-menu-link text-light" to="/" onClick={props.clickFunc}>Home</Link>
         </Nav.Link>
-        <Nav.Link>
+        <Nav.Link  className="main-menu-nav">
           <Link className="main-menu-link text-light" to="/tunes" onClick={props.clickFunc}>Tunes</Link>
         </Nav.Link>
     {/* <ul class="list-group">

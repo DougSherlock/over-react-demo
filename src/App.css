@@ -104,6 +104,10 @@ nav ul {
   /* display: none; */
 }
 
+.main-menu-link {
+  /* width: 100%; */
+  display: block; /* display block expands the area of the onClick event */
+}
 .sidebar-background-visible { 
   /* used to close sidebar when the user clicks away */
   /* display: initial; */
@@ -112,8 +116,8 @@ nav ul {
 }
 
 
-.main-menu-link {
-  /* background-color: var(--dark-bgcolor); */
+.main-menu-nav:hover {
+  background-color: lightsalmon;
   /* color: var(--light-color); */
 }
 
