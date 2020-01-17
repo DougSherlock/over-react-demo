@@ -7,6 +7,7 @@ import { Navbar, Button, ToggleButton, Container } from 'react-bootstrap';
 //import { Glyphicon } from 'react-bootstrap'
 import SidebarBackground from './SidebarBackground';
 import 'bootstrap/dist/css/bootstrap.min.css';
+//--- test checkin after transferring GitHub repository ---
 
 function toggleClass(id, cls) {
   var elem = document.getElementById(id);
