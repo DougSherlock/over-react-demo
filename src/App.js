@@ -7,6 +7,7 @@ import { Navbar, Button, ToggleButton, Container } from 'react-bootstrap';
 //import { Glyphicon } from 'react-bootstrap'
 import SidebarBackground from './SidebarBackground';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ContextDemo from './ContextDemo';
 //--- test checkin after transferring GitHub repository ---
 
 function toggleClass(id, cls) {
@@ -71,6 +72,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/contextdemo">
+            <ContextDemo />
           </Route>
           <Route path="/tunes">
             <Tunes />
