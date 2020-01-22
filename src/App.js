@@ -67,9 +67,9 @@ function App() {
       <div className="App">
         <Navbar id="main-navbar" className="navbar-static-top" variant="dark" bg="dark" fixed="top" >
           <Button className="navbar-button" onClick={() => showSidebar(!menuVisible)} variant="dark" size="sm"><span className="glyphicon glyphicon-menu-hamburger"></span></Button>
+          <Sidebar isVisible={menuVisible} clickFunc={hideSideBar} />
         </Navbar>
         <div className="content" id="content">
-          <Sidebar isVisible={menuVisible} clickFunc={hideSideBar} />
           <SidebarBackground clickFunc={hideSideBar} />
           <Switch>
             <Route exact path="/">
@@ -95,7 +95,7 @@ const Home = () => (
   <div>
     <h1>Over React Demo
         <div>
-        <small>A sandbox to demonstrate the React Bootstrap component library</small>
+        <small>A sandbox to demonstrate React and the React Bootstrap component library</small>
       </div>
     </h1>
   </div>

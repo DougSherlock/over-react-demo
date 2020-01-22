@@ -6,9 +6,6 @@ export default class AccordionSample extends Component {
         return (
             <div>
                 <div>
-                    <h3>Accordion Component</h3>
-                </div>
-                <div>
                     <a href="https://react-bootstrap.github.io/components/accordion/">https://react-bootstrap.github.io/components/accordion/</a>
                 </div>
                 <Accordion defaultActiveKey="0">
