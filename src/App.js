@@ -8,6 +8,8 @@ import { Navbar, Button, ToggleButton, Container } from 'react-bootstrap';
 import SidebarBackground from './SidebarBackground';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ContextDemo from './ContextDemo';
+import BootstrapDemo from './BootstrapDemo';
+
 //--- test checkin after transferring GitHub repository ---
 
 function toggleClass(id, cls) {
@@ -22,9 +24,9 @@ function toggleClass(id, cls) {
 }
 
 function App() {
-//   useEffect((event) => {
-//     execSearch(event);
-// }, []);
+  //   useEffect((event) => {
+  //     execSearch(event);
+  // }, []);
   const [menuVisible, setMenuVisible] = useState(false);
 
   const showSidebar = (show) => {
@@ -62,24 +64,27 @@ function App() {
 
   return (
     <Router>
-    <div className="App">
-      <Navbar id="main-navbar" className="navbar-static-top" variant="dark" bg="dark" fixed="top" >
-        <Button className="navbar-button" onClick={() => showSidebar(!menuVisible)} variant="dark" size="sm"><span className="glyphicon glyphicon-menu-hamburger"></span></Button>
-      </Navbar>
-      <div className="content" id="content">
-        <Sidebar isVisible={menuVisible} clickFunc={hideSideBar} />
-        <SidebarBackground clickFunc={hideSideBar} />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/contextdemo">
-            <ContextDemo />
-          </Route>
-          <Route path="/tunes">
-            <Tunes />
-          </Route>
-        </Switch>          
+      <div className="App">
+        <Navbar id="main-navbar" className="navbar-static-top" variant="dark" bg="dark" fixed="top" >
+          <Button className="navbar-button" onClick={() => showSidebar(!menuVisible)} variant="dark" size="sm"><span className="glyphicon glyphicon-menu-hamburger"></span></Button>
+        </Navbar>
+        <div className="content" id="content">
+          <Sidebar isVisible={menuVisible} clickFunc={hideSideBar} />
+          <SidebarBackground clickFunc={hideSideBar} />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/BootstrapDemo">
+              <BootstrapDemo />
+            </Route>
+            <Route path="/contextdemo">
+              <ContextDemo />
+            </Route>
+            <Route path="/tunes">
+              <Tunes />
+            </Route>
+          </Switch>
         </div>
       </div>
     </Router>
@@ -88,7 +93,11 @@ function App() {
 
 const Home = () => (
   <div>
-      <h1>Over React Demo</h1>
+    <h1>Over React Demo
+        <div>
+        <small>A sandbox to demonstrate the React Bootstrap component library</small>
+      </div>
+    </h1>
   </div>
 );
 

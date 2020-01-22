@@ -13,6 +13,9 @@ function Sidebar(props) {
           <Link className="main-menu-link text-light" to="/" onClick={props.clickFunc}>Home</Link>
         </Nav.Link>
         <Nav.Link className="main-menu-nav">
+          <Link className="main-menu-link text-light" to="/bootstrapdemo" onClick={props.clickFunc}>Bootstrap Demo</Link>
+        </Nav.Link>
+        <Nav.Link className="main-menu-nav">
           <Link className="main-menu-link text-light" to="/contextdemo" onClick={props.clickFunc}>Context Demo</Link>
         </Nav.Link>
         <Nav.Link className="main-menu-nav">

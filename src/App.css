@@ -125,11 +125,6 @@ nav ul {
   margin-bottom: 0px;
 }
 
-#main-navbar {
-  /* background-color: var(--dark-bgcolor); */
-  /* color: var(--light-color); */
-}
-
 html,
 body {
 	height: 100%;
@@ -152,4 +147,12 @@ body {
 .container box-2 {
 		background-color: blue;
 		flex: 1;
+}
+
+.demo-sample {
+  margin: 5%;  
+  border-style: solid;
+  border-width: 10px;
+  border-color: lightskyblue;
+  padding: 5%;  
 }
